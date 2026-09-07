@@ -37,7 +37,7 @@ def run_eager(data_path: Path, limit: int | None = None) -> dict:
 
 
 def run_lazy(data_path: Path, limit: int | None = None) -> dict:
-    """Обробляє один документ і один токен за раз без збереження в пам'яті."""
+
     doc_count = 0
     total_tokens = 0
     term_counts: Counter[str] = Counter()
